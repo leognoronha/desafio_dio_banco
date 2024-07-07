@@ -26,6 +26,7 @@ class Conta:
         self._agencia = "0001"
         self._cliente = cliente
         self._historico = Historico()
+        print(f"Conta criada: {self.numero}, Agência: {self.agencia}, Cliente: {self.cliente.nome}")
 
     @classmethod
     def nova_conta(cls, cliente, numero):
@@ -52,6 +53,7 @@ class Conta:
         return self._historico
 
     def sacar(self, valor):
+        print(f"Conta {self.numero}: Tentativa de saque de R$ {valor:.2f}")
         if valor > self._saldo:
             print("\n@@@ Operação falhou! Você não tem saldo suficiente. @@@")
             return False
@@ -65,6 +67,7 @@ class Conta:
             return False
 
     def depositar(self, valor):
+        print(f"Conta {self.numero}: Tentativa de depósito de R$ {valor:.2f}")
         if valor > 0:
             self._saldo += valor
             print("\n=== Depósito realizado com sucesso! ===")
@@ -78,9 +81,11 @@ class ContaCorrente(Conta):
         super().__init__(numero, cliente)
         self._limite = limite
         self._limite_saques = limite_saques
+        print(f"ContaCorrente criada com limite de R$ {self._limite:.2f} e limite de saques {self._limite_saques}")
 
     def sacar(self, valor):
         numero_saques = sum(1 for transacao in self.historico.transacoes if transacao["tipo"] == "Saque")
+        print(f"Conta {self.numero}: Tentativa de saque de R$ {valor:.2f} com {numero_saques} saques realizados")
 
         if valor > self._limite:
             print("\n@@@ Operação falhou! O valor do saque excede o limite. @@@")
