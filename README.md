@@ -32,6 +32,15 @@ Na versão `desafio_banco_v3.py`, foram implementadas as seguintes melhorias e n
 - **Melhoria na Estrutura do Menu**: O menu foi reorganizado para melhorar a clareza e a interação com o usuário.
 - **Criação e Seleção de Clientes e Contas**: Agora é possível criar novos clientes e associar contas a eles, bem como selecionar clientes para realizar transações.
 
+## Melhorias na Versão 4
+
+Na versão `desafio_banco_v4.py`, foram implementadas as seguintes melhorias e novas funcionalidades:
+
+- **Mensagens de Criação de Conta**: Agora, ao criar uma conta, uma mensagem detalhada é exibida com informações da conta criada.
+- **Melhorias na Exibição do Extrato**: O extrato agora exibe as transações com a data, tipo e valor de forma mais clara e detalhada.
+- **Refatoração do Menu**: O menu foi melhorado para exibir opções de forma mais intuitiva e organizada.
+- **Melhorias no Fluxo de Criação e Seleção de Clientes**: Melhorias na criação de clientes e seleção de clientes para tornar o processo mais claro e eficiente.
+
 ## Como Executar o Sistema
 
 Para executar o sistema bancário, siga os seguintes passos:
