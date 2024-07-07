@@ -23,6 +23,15 @@ Na versão `desafio_banco_v2.py`, foram implementadas as seguintes melhorias:
 - **Depósito**: Agora, ao realizar um depósito, o sistema exibe o valor depositado em reais (R$).
 - **Refatoração de Código**: Melhorias na legibilidade e clareza do código, utilizando funções auxiliares e constantes para evitar repetição de código e melhorar a organização.
 
+## Melhorias na Versão 3
+
+Na versão `desafio_banco_v3.py`, foram implementadas as seguintes melhorias e novas funcionalidades:
+
+- **Depósito e Saque com Data**: Agora, ao realizar um depósito ou saque, o sistema registra a data e hora da transação e a exibe no extrato.
+- **Mensagens Detalhadas de Depósito e Saque**: Mensagens adicionais foram incluídas para exibir detalhes das tentativas de depósito e saque, incluindo valores e resultados.
+- **Melhoria na Estrutura do Menu**: O menu foi reorganizado para melhorar a clareza e a interação com o usuário.
+- **Criação e Seleção de Clientes e Contas**: Agora é possível criar novos clientes e associar contas a eles, bem como selecionar clientes para realizar transações.
+
 ## Como Executar o Sistema
 
 Para executar o sistema bancário, siga os seguintes passos:
@@ -35,13 +44,10 @@ Para executar o sistema bancário, siga os seguintes passos:
 
 2. Execute o script Python:
     ```sh
-    python desafio_banco_v2.py
+    python desafio_banco_v3.py
     ```
-
 
 ## Repositórios Git
 
 [Documentação](https://github.com/digitalinnovationone/trilha-python-dio): Repositório com todo o código-fonte desenvolvido nesta Formação;
-
-[Documentação](https://github.com/digitalinnovationone/trilha-python-dio/blob/main/00%20-%20Fundamentos/desafio.py): Aqui você tem acesso ao acesso do projeto em questão.
 
