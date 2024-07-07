@@ -16,7 +16,7 @@ No desenvolvimento deste projeto, o objetivo foi colocar em prática os conceito
 - **Criação de Conta**: Permite a criação de novas contas associadas a usuários existentes, especificando agência e número da conta.
 - **Listar Contas**: Exibe todas as contas cadastradas no sistema, com informações de agência, número da conta e titular.
 
-## Melhorias na Versão Atual
+## Melhorias na Versão 2
 
 Na versão `desafio_banco_v2.py`, foram implementadas as seguintes melhorias:
 
